@@ -1,0 +1,451 @@
+.headerAndStartScreenWrapper {
+  padding: 30px 40px 0;
+}
+
+.logo:hover .logoTitleColor {
+  color: var(--color-primary-light);
+}
+
+.logo:hover .logoSubtitleColor {
+  color: var(--color-light-s);
+}
+
+.logoTitleColor {
+  color: var(--color-primary);
+}
+
+.logoSubtitleColor {
+  color: var(--color-light-xl);
+}
+
+.navMenuItemColor {
+  color: var(--color-dark-s);
+}
+
+.navMenuItemIsActive {
+  color: var(--color-light-s);
+}
+
+.navMenuItemColor:hover {
+  color: var(--color-light-s);
+}
+
+.burgerMenuBtnLineColor {
+  background-color: var(--color-primary);
+}
+
+.burgerMenuBtn:hover .burgerMenuBtnLineColor {
+  background-color: var(--color-primary-light);
+}
+
+.burgerMenuContainer {
+  background-color: var(--color-dark-3xl);
+}
+
+.startScreen {
+  margin-top: 90px;
+  display: flex;
+  gap: 42px;
+}
+
+.startScreenContent {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  margin-top: 163px;
+}
+
+.startScreenTitle {
+  color: var(--color-light-xl);
+}
+
+.startScreenDescription {
+  color: var(--color-dark-s);
+}
+
+.blockAboutWrapper {
+  padding: 80px 215px 100px;
+  display: flex;
+  gap: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.blockAboutContent {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.blockAboutTitle {
+  color: var(--color-dark-l);
+}
+
+.blockAboutDescription {
+  color: var(--color-dark-xl);
+}
+
+.blockPetsWrapper {
+  padding: 80px 40px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+}
+
+.blockPetsTitle {
+  color: var(--color-dark-l);
+  text-align: center;
+}
+
+.blockPetsSlider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 53px;
+}
+
+.sliderContainer {
+  overflow: hidden;
+  width: 990px;
+}
+
+.sliderPages {
+  display: flex;
+  justify-content: center;
+}
+
+.sliderPages.leftPosition {
+  transition: var(--transitionDuration);
+  transform: translateX(990px);
+}
+
+.sliderPages.rightPosition {
+  transition: var(--transitionDuration);
+  transform: translateX(-990px);
+}
+
+.sliderPage {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 90px;
+}
+
+.blockHelpWrapper {
+  padding: 80px 40px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+}
+
+.blockHelpTitle {
+  color: var(--color-dark-l);
+  text-align: center;
+}
+
+.typeOfHelpContainer {
+  display: flex;
+  justify-content: center;
+  column-gap: 120px;
+  row-gap: 55px;
+  flex-wrap: wrap;
+}
+
+.typeOfHelpItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.typeOfHelpItemName {
+  color: var(--color-dark-l);
+}
+
+.blockDonationWrapper {
+  padding: 80px 182px 97px 183px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.blockDonationContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blockDonationTitle,
+.blockDonationSubheading,
+.blockDonationCreditCardNumber {
+  color: var(--color-dark-l);
+}
+
+.blockDonationDescription {
+  font-family: 'Arial';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--color-dark-m);
+}
+
+.blockDonationCreditCard {
+  padding: 10px 15px;
+  display: flex;
+  gap: 15px;
+  background-color: var(--color-primary);
+  border-radius: 9px;
+  width: fit-content;
+  transition: 0.3s;
+  align-items: center;
+}
+
+.blockDonationCreditCard:hover {
+  cursor: pointer;
+  background-color: var(--color-primary-light);
+}
+
+.blockDonationCreditCard:active {
+  transform: translateY(2px) scale(0.95);
+  box-shadow: 0 2px 6px 1px rgb(0 0 0 / 50%);
+}
+
+.blockDonationImg {
+  padding-bottom: 4px;
+}
+
+@media screen and (max-width: 1279.9px) {
+  .headerAndStartScreenWrapper {
+    padding: 30px 30px 0;
+  }
+
+  .startScreen {
+    margin-top: 60px;
+    gap: 100px;
+    align-items: center;
+  }
+
+  .startScreenContent {
+    gap: 42px;
+    margin-top: 0;
+  }
+
+  .startScreenImg {
+    width: 57%;
+  }
+
+  .blockAboutWrapper {
+    padding: 80px 166px 100px 170px;
+    gap: 80px;
+    flex-direction: column-reverse;
+  }
+
+  .blockAboutImg {
+    padding-right: 5px;
+  }
+
+  .blockPetsWrapper {
+    padding: 80px 30px 100px;
+  }
+  
+  .blockPetsSlider {
+    gap: 12px;
+    width: 100%;
+  }
+
+  .sliderContainer {
+    width: 580px;
+  }
+
+  .sliderPages.leftPosition {
+    transform: translateX(580px);
+  }
+  
+  .sliderPages.rightPosition {
+    transform: translateX(-580px);
+  }
+
+  .sliderPage {
+    gap: 40px;
+  }
+
+  .petCard.card3 {
+    display: none;
+  }
+
+  .blockHelpWrapper {
+    padding: 80px 69px 100px;
+  }
+  
+  .typeOfHelpContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 64px;
+    width: 100%;
+  }
+
+  .blockDonationWrapper {
+    padding: 80px 132px 96px 131px;
+    gap: 60px;
+    flex-direction: column-reverse;
+  }
+  
+  .blockDonationContent {
+    padding: 0 62px;
+  }
+}
+
+@media screen and (max-width: 1019px) {
+  .startScreen {
+    flex-direction: column;
+  }
+
+  .startScreenContent {
+    padding: 0 124px 0 124px;
+  }
+
+  .startScreenBtn {
+    align-self: center;
+  }
+
+  .startScreenImg {
+    align-self: flex-end;
+    width: 80.3%;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .headerAndStartScreenWrapper {
+    padding: 30px 10px 0;
+  }
+
+  .startScreen {
+    gap: 105px;
+  }
+
+  .startScreenContent {
+    padding: 0;
+  }
+  
+  .startScreenTitle,
+  .startScreenDescription {
+    text-align: center;
+  }
+
+  .startScreenImg {
+    width: 86.79%;
+  }
+
+  .blockAboutWrapper {
+    padding: 42px 24px;
+    gap: 42px;
+  }
+
+  .blockAboutContent {
+    gap: 22px;
+  }
+  
+  .blockAboutTitle {
+    text-align: center;
+    padding-bottom: 3px;
+  }
+
+  .blockAboutDescription {
+    text-align: justify;
+  }
+
+  .blockAboutImg {
+    width: 95.3%;
+    padding: 0;
+    max-width: 350px;
+  }
+
+  .blockPetsWrapper {
+    padding: 42px 10px;
+    gap: 42px;
+  }
+
+  .sliderContainer {
+    width: 270px;
+  }
+
+  .sliderPages.leftPosition {
+    transform: translateX(270px);
+  }
+  
+  .sliderPages.rightPosition {
+    transform: translateX(-270px);
+  }
+
+  .petCard.card2 {
+    display: none;
+  }
+
+  .blockHelpWrapper {
+    padding: 42px 15px;
+    gap: 42px;
+  }
+  
+  .typeOfHelpContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 30px;
+  }
+
+  .typeOfHelpItem {
+    gap: 20px;
+  }
+
+  .typeOfHelpItemIcon {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .blockDonationWrapper {
+    padding: 42px 20px 42px 19px;
+    gap: 42px;
+  }
+  
+  .blockDonationContent {
+    padding: 0;
+  }
+
+  .blockDonationTitle {
+    text-align: center;
+  }
+
+  .blockDonationSubheading {
+    padding-left: 3px;
+  }
+
+  .blockDonationDescription {
+    text-align: justify;
+  }
+
+  .blockDonationImg {
+    width: 93%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .blockPetsSlider {
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 20px;
+    justify-content: center;
+  }
+
+  .sliderBtnLeft {
+    order: 2;
+  }
+
+  .sliderBtnRight {
+    order: 3;
+  }
+}
+
+
